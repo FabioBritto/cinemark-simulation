@@ -34,7 +34,6 @@ public class Caixa {
 										 + "\n[2] " + listaFilmes[2].toString()
 										 + "\n[3] " + listaFilmes[3].toString()
 										 + "\n[4] " + listaFilmes[4].toString()));
-		
 		int totalIngressos = escolherIngressos();
 		if(confirmarCompra(filme,totalIngressos)) {
 			return listaFilmes[filme];
