@@ -1,0 +1,125 @@
+!SESSION 2024-06-26 19:33:51.372 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 19:33:53.765
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 19:34:04.758
+!MESSAGE Logback config file: C:\Users\aluno\Documents\Projetos_Java\cinemark-simulation\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-26 19:34:17.141
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\aluno'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-06-26 20:51:27.570 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 20:51:35.092
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 20:51:40.174
+!MESSAGE Logback config file: C:\Users\aluno\Documents\Projetos_Java\cinemark-simulation\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-26 20:51:44.086
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\aluno'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.core 4 0 2024-06-26 20:51:44.106
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../.git', absolute path: 'C:/Users/aluno/Documents/Projetos_Java/cinemark-simulation/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:751)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:714)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:678)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:661)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:335)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:359)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:345)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:410)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:388)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-06-26 20:52:49.970 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Users/aluno/Documents/Projetos_Java/cinemark-simulation/
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 20:52:51.649
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 20:52:52.421
+!MESSAGE Logback config file: C:\Users\aluno\Documents\Projetos_Java\cinemark-simulation\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-26 20:52:55.744
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\aluno'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-06-26 20:53:02.602 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 20:53:03.852
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 20:53:25.984
+!MESSAGE Logback config file: C:\Users\aluno\Documents\Projetos_Java\cinemark-simulation\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-26 20:53:29.266
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\aluno'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-06-26 21:03:47.616 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 21:03:49.284
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-26 21:04:09.651
+!MESSAGE Logback config file: C:\Users\aluno\Documents\Projetos_Java\cinemark-simulation\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-26 21:04:12.281
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\aluno'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
