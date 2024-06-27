@@ -13,6 +13,7 @@ public class Cliente {
 	}
 	
 	
+	
 	public void comprarIngresso(double pagamento,int salaFilme) {
 		carteira -= pagamento;
 		Caixa.receberPagamento(pagamento,salaFilme);
