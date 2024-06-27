@@ -1,4 +1,7 @@
+package cinema;
+
 import lanchonete.Lanchonete;
+import client.*;
 
 public class CinemaTest {
 

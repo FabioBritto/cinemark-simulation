@@ -1,3 +1,5 @@
+package cinema;
+
 public class Filmes {
 
 	private String nomeFilme;

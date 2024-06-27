@@ -1,3 +1,7 @@
+package client;
+
+import cinema.Filmes;
+import cinema.Cinema;
 import javax.swing.*;
 
 public class Caixa {

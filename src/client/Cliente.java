@@ -1,5 +1,8 @@
+package client;
+
 import javax.swing.*;
 import lanchonete.Lanchonete;
+import cinema.Filmes;
 
 public class Cliente {
 
