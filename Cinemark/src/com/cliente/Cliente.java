@@ -1,7 +1,9 @@
 package com.cliente;
+
+import com.cinema.lanchonete.*;
+import com.cinema.*;
 import javax.swing.*;
 
-import lanchonete.salgados.Lanchonete;
 
 public class Cliente {
 
@@ -36,6 +38,8 @@ public class Cliente {
 	}
 	
 	public void escolherLanche() {
-		Lanchonete.escolherLanches();
+		//Aqui preciso montar uma lógica, onde a pessoa escolhe qual o produto,
+		//E então é passado como parâmetro pra escolha do produto.
+		//Lanchonete.escolherProduto();
 	}
 }

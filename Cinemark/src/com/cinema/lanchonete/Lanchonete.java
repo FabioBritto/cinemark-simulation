@@ -37,15 +37,14 @@ public class Lanchonete {
 		doces = listaDoces;
 	}
 	
-	public static void escolherLanches() {
+	public static void escolherProduto(Alimento produto) {
 		
 		String lanches = "O que deseja comprar?\n"
 					   + "\nSalgados:\n";
 		
 		for(int i = 0;i < 5;i++) {
-			lanches += "Produto: " + salgados[i].getNomeSalgado() +
-					   "          Preço: " + salgados[i].getPrecoSalgado() + "            ";
-			
+			lanches += "\nProduto: " + salgados[i].getNome() +
+					   "\nPreço: " + salgados[i].getPreco() + "\n";	
 		}
 		
 		JOptionPane.showInputDialog(lanches);

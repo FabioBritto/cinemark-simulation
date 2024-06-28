@@ -1,0 +1,20 @@
+import com.cinema.lanchonete.*;
+import com.cinema.*;
+import com.cliente.*;
+import javax.swing.*;
+
+public class CinemaTest {
+
+	public static void main(String[]args) {
+		
+		double dinheiro = Double.parseDouble(JOptionPane.showInputDialog("Para iniciar a simulação, por favor, diga com quanto dinheiro deseja começar:"));
+		
+		Cliente fabio = new Cliente(dinheiro);
+		Caixa.preencherListaFilmes();
+		Lanchonete.preencherLanchonete();
+		fabio.escolherFilme();
+		fabio.escolherLanche();
+		Caixa.getTotalCaixa();
+		fabio.escolherLanche();
+	}
+}
