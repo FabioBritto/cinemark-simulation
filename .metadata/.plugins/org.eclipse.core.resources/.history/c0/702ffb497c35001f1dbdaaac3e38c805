@@ -1,11 +1,14 @@
 package com.cinema.lanchonete;
 
-public class Bebidas extends Alimento{
+public class Bebidas {
 
+	private static String nomeBebida;
+	private static double precoBebida;
 	private boolean isGelada = false;
 	
 	public Bebidas(String nomeBebida, double precoBebida) {
-		super(nomeBebida,precoBebida);
+		this.nomeBebida = nomeBebida;
+		this.precoBebida = precoBebida;
 	}
 	
 	public void setGelada() {

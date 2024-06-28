@@ -5,7 +5,8 @@ public class Bebidas extends Alimento{
 	private boolean isGelada = false;
 	
 	public Bebidas(String nomeBebida, double precoBebida) {
-		super(nomeBebida,precoBebida);
+		this.nomeBebida = nomeBebida;
+		this.precoBebida = precoBebida;
 	}
 	
 	public void setGelada() {

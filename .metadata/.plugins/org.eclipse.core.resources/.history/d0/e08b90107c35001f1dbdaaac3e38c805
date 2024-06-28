@@ -1,0 +1,7 @@
+package com.cinema.lanchonete;
+
+public class Alimento {
+
+	protected String nome;
+	protected double preco;
+}
