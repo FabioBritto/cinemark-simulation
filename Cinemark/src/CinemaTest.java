@@ -7,6 +7,9 @@ public class CinemaTest {
 
 	public static void main(String[]args) {
 		
+		Lanchonete.preencherLanchonete();
+		Lanchonete.escolherProduto();
+		
 		double dinheiro = 0;
 		try {
 			dinheiro = Double.parseDouble(JOptionPane.showInputDialog("Para iniciar a simulação, por favor, diga com quanto dinheiro deseja começar:"));

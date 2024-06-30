@@ -1,52 +1,42 @@
 package com.cinema.lanchonete;
 
+import java.util.ArrayList;
+
+import javax.swing.JList;
 import javax.swing.JOptionPane;
 
 public class Lanchonete {
-
-	private static Salgados[] salgados;
-	private static Bebidas[] bebidas;
-	private static Doces[] doces;
+	
+	private static ProdutoLanchonete[] produtos;
+	private double caixa;
+	private ArrayList<ProdutoLanchonete> carrinhoDeCompras = new ArrayList<>();
 
 	
 	
 	public static void preencherLanchonete() {
+		produtos = new ProdutoLanchonete[10];
 		
-		Salgados[] listaSalgados = new Salgados[5];
-		listaSalgados[0] = new Salgados("Coxinha",4.5);
-		listaSalgados[1] = new Salgados("Pipoca Salgada P",21.8);
-		listaSalgados[2] = new Salgados("Pipoca Salgada M",25.5);
-		listaSalgados[3] = new Salgados("Pipoca Salgada G",31.7);
-		listaSalgados[4] = new Salgados("Ruffles",9.2);
-		salgados = listaSalgados;
-		
-		Bebidas[] listaBebidas = new Bebidas[5];
-		listaBebidas[0] = new Bebidas("Coca-Cola Lata",3.75);
-		listaBebidas[1] = new Bebidas("Coca-Cola 600ml",7.35);
-		listaBebidas[2] = new Bebidas("Guaraná Lata",3.25);
-		listaBebidas[3] = new Bebidas("Guaraná 600ml",7.25);
-		listaBebidas[4] = new Bebidas("Água com Gás",1.55);
-		bebidas = listaBebidas;
-		
-		Doces[] listaDoces = new Doces[5];
-		listaDoces[0] = new Doces("Pipoca Doce P", 22.36);
-		listaDoces[1] = new Doces("Pipoca Doce M", 28.36);
-		listaDoces[2] = new Doces("Pipoca Doce G", 32.36);
-		listaDoces[3] = new Doces("Fini", 9.36);
-		listaDoces[4] = new Doces("Chocolate Barra", 10.23);
-		doces = listaDoces;
+		produtos[0] = new ProdutoLanchonete("Pipoca Salgada Média",10.90);
+		produtos[1] = new ProdutoLanchonete("Pipoca Salgada Grande",16.90);
+		produtos[2] = new ProdutoLanchonete("Pipoca Doce Média",11.90);
+		produtos[3] = new ProdutoLanchonete("Pipoca Doce Grande",17.90);
+		produtos[4] = new ProdutoLanchonete("Batata Ruffles",8.90);
+		produtos[5] = new ProdutoLanchonete("Cebolitos",7.90);
+		produtos[6] = new ProdutoLanchonete("Fini",5.90);
+		produtos[7] = new ProdutoLanchonete("Refrigerante Médio",9.90);
+		produtos[8] = new ProdutoLanchonete("Refrigerante Grande",12.90);
+		produtos[9] = new ProdutoLanchonete("Água Com Gás/Água Sem Gás",3.90);
 	}
-	
-	public static void escolherProduto(Alimento produto) {
+	public static void escolherProduto() {
 		
 		String lanches = "O que deseja comprar?\n"
-					   + "\nSalgados:\n";
+					   + "\nLista de Produtos:\n";
 		
-		for(int i = 0;i < 5;i++) {
-			lanches += "\nProduto: " + salgados[i].getNome() +
-					   "\nPreço: " + salgados[i].getPreco() + "\n";	
+		for(int i = 0;i < 10;i++) {
+			lanches += "\nProduto: " + produtos[i].getNomeProduto() +
+					   "\nPreço: " + produtos[i].getPrecoProduto() + "\n";	
 		}
 		
-		JOptionPane.showInputDialog(lanches);
+		JList<ProdutoLanchonete> produtos = new JList<ProdutoLanchonete>();
 	}
 }
