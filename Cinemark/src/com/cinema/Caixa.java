@@ -56,7 +56,6 @@ public class Caixa {
 													   +"\nPreço Total: " + precoTotal
 													   +"\nSala: 0" + salaCinema);
 		if(opcao == 0) {
-			
 			return true;
 		}
 		else{

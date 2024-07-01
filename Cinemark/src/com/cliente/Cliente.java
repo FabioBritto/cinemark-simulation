@@ -37,9 +37,8 @@ public class Cliente {
 		JOptionPane.showMessageDialog(null, "Carteira: R$ " + carteira);
 	}
 	
-	public void escolherLanche() {
-		//Aqui preciso montar uma lógica, onde a pessoa escolhe qual o produto,
-		//E então é passado como parâmetro pra escolha do produto.
-		//Lanchonete.escolherProduto();
+	public void comprarLanche() {
+		double preco = Lanchonete.escolherProduto();
+		carteira -= preco;
 	}
 }

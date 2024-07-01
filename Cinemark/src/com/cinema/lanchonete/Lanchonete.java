@@ -27,16 +27,17 @@ public class Lanchonete {
 		produtos[8] = new ProdutoLanchonete("Refrigerante Grande",12.90);
 		produtos[9] = new ProdutoLanchonete("Água Com Gás/Água Sem Gás",3.90);
 	}
-	public static void escolherProduto() {
+	public static double escolherProduto() {
 		
 		String lanches = "O que deseja comprar?\n"
 					   + "\nLista de Produtos:\n";
 		
 		for(int i = 0;i < 10;i++) {
-			lanches += "\nProduto: " + produtos[i].getNomeProduto() +
-					   "\nPreço: " + produtos[i].getPrecoProduto() + "\n";	
+			lanches += "\n[" + i + "] Produto:     " + produtos[i].getNomeProduto() +
+					   "\n      Preço:         " + produtos[i].getPrecoProduto() + "\n";	
 		}
 		
-		JList<ProdutoLanchonete> produtos = new JList<ProdutoLanchonete>();
+		int escolhaCliente = Integer.parseInt(JOptionPane.showInputDialog(lanches));
+		return produtos[escolhaCliente].getPrecoProduto();
 	}
 }
