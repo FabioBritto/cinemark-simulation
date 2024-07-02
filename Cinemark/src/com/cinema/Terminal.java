@@ -1,11 +1,12 @@
 package com.cinema;
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
-public class Caixa {
+import com.cinema.lanchonete.Lanchonete;
+
+public class Terminal {
 
 	private static double totalCaixa;
 	private static Filmes[] listaFilmes;
-	private static Cinema[] salasCinema;
 	private static double precoTotal;
 	
 	
@@ -73,6 +74,36 @@ public class Caixa {
 	
 	public static double getPrecoTotal() {
 		return precoTotal;
+	}
+	
+	public static void mostrarMenu() {
+		int opcao = -1;
+		do {
+			try {
+				opcao = Integer.parseInt(JOptionPane.showInputDialog("Bom dia. O que deseja fazer?\n"
+						+"\n[0] Lista de Filmes"
+						+"\n[1] Lanchonete"
+						+"\n[2] Sair\n"));
+
+				if(opcao == 0) {
+					escolherFilmes();
+				}
+				else if(opcao == 1) {
+					Lanchonete.escolherProduto();
+					
+				}
+				else if(opcao == 2) {
+					JOptionPane.showMessageDialog(null,"Até logo!");
+				}
+				else {
+					JOptionPane.showMessageDialog(null,"Por favor, escolha uma opção válida!");
+				}
+			}catch(NumberFormatException e) {
+				JOptionPane.showMessageDialog(null,"Por favor, escolha uma opção válida!");
+			}
+			
+		}while(opcao < 0 || opcao > 2);
+		
 	}
 	
 }

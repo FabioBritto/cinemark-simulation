@@ -7,7 +7,7 @@ public class CinemaTest {
 
 	public static void main(String[]args) {
 		
-		Caixa.preencherListaFilmes();
+		Terminal.preencherListaFilmes();
 		Lanchonete.preencherLanchonete();
 		
 		double dinheiro = 0;
@@ -19,13 +19,13 @@ public class CinemaTest {
 				}
 			}catch(NullPointerException e) {
 				JOptionPane.showMessageDialog(null,"Por favor, preencha com algum valor!");
+			}catch(NumberFormatException erro) {
+				JOptionPane.showMessageDialog(null,"Por favor, preencha com algum valor!");
 			}
 		}
 		
 		Cliente fabio = new Cliente(dinheiro);
-		fabio.comprarLanche();
+		Terminal.mostrarMenu();
 		fabio.mostrarCarteira();
-		fabio.escolherFilme();
-		Caixa.getTotalCaixa();
 	}	
 }

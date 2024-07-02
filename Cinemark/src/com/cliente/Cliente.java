@@ -14,15 +14,20 @@ public class Cliente {
 	}
 	
 	public void comprarIngresso(double pagamento) {
-		carteira -= pagamento;
-		Caixa.receberPagamento(pagamento);
+		if(isSaldo(pagamento)) {
+			carteira -= pagamento;
+			Terminal.receberPagamento(pagamento);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Você não tem dinheiro suficiente para esta compra");
+		}
 	}
 	
 	public void escolherFilme() {
 		//AQUI VOU COLOCAR NUM TRY CATCH PRA CASO O USUÁRIO ESCOLHA NÃO
 		try {
-			double precoFilme = Caixa.escolherFilmes().getPrecoFilme();
-			double precoTotal = Caixa.getPrecoTotal();
+			double precoFilme = Terminal.escolherFilmes().getPrecoFilme();
+			double precoTotal = Terminal.getPrecoTotal();
 			
 			if(precoFilme != 1) {
 				comprarIngresso(precoTotal);
@@ -39,6 +44,20 @@ public class Cliente {
 	
 	public void comprarLanche() {
 		double preco = Lanchonete.escolherProduto();
-		carteira -= preco;
+		if(isSaldo(preco)) {
+			carteira -= preco;
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Você não tem dinheiro suficiente para esta compra");
+		}
+	}
+	
+	private boolean isSaldo(double preco) {
+		if(preco > carteira) {
+			return false;
+		}
+		else {
+			return true;
+		}
 	}
 }
